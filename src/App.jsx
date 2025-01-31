@@ -33,12 +33,12 @@ function App() {
 
   return (
     <>
-    <div className='container mx-5'>
-     <div className='m-auto rounded border p4 ' style={{width:"700px", backgroundColor:"blue"}}>
-       <h2 className='text-white text-center m-5'> Todo List</h2>
+    <div className='container m-4 '>
+     <div className='m-auto border border-dark rounded border-5 ' style={{width:"700px",}}>
+       <h2 className='text-black text-center m-5 fw-bolder display-1'> Todo List</h2>
        <form className="d-flex" onSubmit={handlesubmit}>
-        <input className="form-control m-3 " placeholder="New Task" name='task' />
-        <button className="btn btn-success h6 me-4  bg-dark  " type="submit">Add</button>
+        <input className='form-control m-3 bg-info' placeholder="New Task" name='task'/ >
+        <button className='btn btn-success h6 me-4  bg-dark' type="submit">Add</button>
       </form>
 
        {

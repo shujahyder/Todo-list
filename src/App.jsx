@@ -30,18 +30,19 @@ function App() {
     newTodos.splice(index,1)
     setTodos(newTodos)
   }
-
   return (
     <>
     <div >
     <div className='container m-4 p-4'>
      <div className='m-auto border border-dark rounded border-5 w-50 bg-dark '>
-        <button className='btn btn-primary border-dark rounded border-3' onClick={() => alert('Login clicked')}>Login</button>
-      <button className='btn btn-primary border-dark rounded border-3' onClick={() => alert('Signup clicked')}>Signup</button>
+        <button className='btn btn-primary border-dark rounded border-3' onClick={() => alert('Login clicked')} id='butt'>Login</button>
+      <button className='btn btn-primary border-dark rounded border-3' onClick={() => alert('Signup clicked')} id='butt'>Signup</button>
        <h2 className='text-white text-center m-5 fw-bolder display-1'> Your Daily Goals!</h2>
        <form className="d-flex" onSubmit={handlesubmit}>
         <input className='form-control m-3 bg-light border-dark rounded border-3 ' placeholder="New Task" name='task'/ >
-        <button className='btn btn-primary h5 me-2  ' type="submit">Add Task</button>
+        <button type="submit" className="btn btn-dark m-3" id='add'>
+        <i class="bi bi-plus-square"></i>
+        </button>
       </form>
 
        {
